@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anusha Kakileti | Aspiring Data Analyst</title>
+    <meta name="description" content="Portfolio of Anusha Kakileti, an Aspiring Data Analyst specializing in Python, SQL, Power BI, Pandas, and Data Science.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Anusha Kakileti | Data Analyst Portfolio">
+    <meta property="og:description" content="Explore projects, skills, and certifications of Anusha Kakileti.">
+    <meta property="og:type" content="website">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <!-- Header / Fixed Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo" aria-label="Anusha Kakileti Monogram">
+                <span class="logo-box">AK</span>
+                <span class="logo-text">Anusha Kakileti</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="./assets/" class="btn btn-outline" download="Anusha_Kakileti_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge">
+                        <span class="status-dot"></span>
+                        <span>Available for Data Analyst Roles</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="gradient-text">Anusha Kakileti</span>
+                    </h1>
+                    <h2 class="hero-subtitle">Aspiring Data Analyst</h2>
+                    <p class="hero-description">
+                        Passionate about transforming complex datasets into actionable insights through Python, SQL, Power BI, and machine learning models to solve real-world challenges.
+                    </p>
+
+                    <div class="hero-meta">
+                        <span class="meta-item"><i class="fa-solid fa-location-dot"></i> Amalapuram, A.P, India</span>
+                        <span class="meta-item"><i class="fa-solid fa-graduation-cap"></i> B.Tech CSE (2022–2026)</span>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="./assets/Anusha_CV_Final_Updated.pdf" class="btn btn-secondary" download="Anusha_Kakileti_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-solid fa-download"></i>
+                            <span>Download Resume</span>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Contact Me</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="mailto:anushakakileti33@gmail.com" class="social-link" aria-label="Email Anusha"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+                        <a href="tel:+919100078838" class="social-link" aria-label="Call Anusha"><i class="fa-solid fa-phone"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="analytics-card-deck">
+                        <div class="analytics-card card-main">
+                            <div class="card-header">
+                                <div class="card-dots">
+                                    <span class="dot red"></span>
+                                    <span class="dot yellow"></span>
+                                    <span class="dot green"></span>
+                                </div>
+                                <span class="card-title-code">data_insights.py</span>
+                            </div>
+                            <div class="card-body">
+                                <pre><code><span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">import</span> seaborn <span class="code-keyword">as</span> sns
+
+<span class="code-comment"># Extract & Analyze Data</span>
+df = pd.read_csv(<span class="code-string">"tesla_stock.csv"</span>)
+insights = df.groupby(<span class="code-string">'Year'</span>).mean()
+print(<span class="code-string">"Data Analysis Complete."</span>)</code></pre>
+                            </div>
+                        </div>
+                        <div class="analytics-card card-overlay">
+                            <div class="badge-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div>
+                                <h4>Data Visualization</h4>
+                                <p>Power BI & Matplotlib</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Profile Summary</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-panel">
+                        <p class="about-text">
+                            Passionate aspiring Data Analyst with a strong belief in technology’s power to solve real-world problems. Capable of working in collaborative environments to analyze data and develop reliable solutions. Committed to continuous improvement, collaboration, and delivering data-driven insights.
+                        </p>
+                        
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-bullseye"></i></div>
+                                <div>
+                                    <h4>Analytical Mindset</h4>
+                                    <p>Focused on statistical modeling, data visualization, and predictive analysis.</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon"><i class="fa-solid fa-users"></i></div>
+                                <div>
+                                    <h4>Collaborative Developer</h4>
+                                    <p>Proven internship experience in team-driven web development and data science.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Technical Expertise</span>
+                    <h2 class="section-title">Skills & Capabilities</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Languages -->
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <i class="fa-solid fa-code category-icon"></i>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-terminal"></i> C++</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Visualization & Tools -->
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <i class="fa-solid fa-chart-pie category-icon"></i>
+                            <h3>Visualization & Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+                            <span class="skill-badge"><i class="fa-solid fa-file-excel"></i> Microsoft Excel</span>
+                        </div>
+                    </div>
+
+                    <!-- Python Libraries -->
+                    <div class="skill-category-card glass-panel">
+                        <div class="category-header">
+                            <i class="fa-solid fa-cubes category-icon"></i>
+                            <h3>Python Data Libraries</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span class="skill-badge"><i class="fa-solid fa-table"></i> Pandas</span>
+                            <span class="skill-badge"><i class="fa-solid fa-calculator"></i> NumPy</span>
+                            <span class="skill-badge"><i class="fa-solid fa-chart-line"></i> Matplotlib</span>
+                            <span class="skill-badge"><i class="fa-solid fa-wave-square"></i> Seaborn</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Career History</span>
+                    <h2 class="section-title">Internship Experience</h2>
+                </div>
+
+                <div class="timeline">
+                    <!-- Data Science Intern -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Data Science Intern</h3>
+                                    <h4 class="company-name"><i class="fa-solid fa-building"></i> IIDT Black Bucks</h4>
+                                </div>
+                                <span class="experience-type-badge">Data Science</span>
+                            </div>
+                            <p class="experience-desc">
+                                Worked on hands-on data analysis and machine learning tasks, exploring datasets, applying statistical methods, and visualizing patterns to drive decision-making.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Full Stack Web Developer Intern -->
+                    <div class="timeline-item glass-panel">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="role-title">Full Stack Web Developer Intern</h3>
+                                    <h4 class="company-name"><i class="fa-solid fa-building"></i> IIDT Black Bucks</h4>
+                                </div>
+                                <span class="experience-type-badge">Web Development</span>
+                            </div>
+                            <p class="experience-desc">
+                                Worked on developing web applications and seamlessly integrating frontend user interfaces with backend database services.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tag">Full Stack</span>
+                                <span class="tag">Frontend Integration</span>
+                                <span class="tag">Backend Services</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Case Studies & Applications</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-type"><i class="fa-solid fa-chart-line"></i> Machine Learning / Financial Data</div>
+                            <h3 class="project-title">Tesla Stock Prediction</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                Tesla, Inc. is a leading electric vehicle (EV) and clean energy company listed on NASDAQ (TSLA). Due to its high market volatility, this project performs predictive analysis and stock prediction modeling using historical time-series data.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Python</span>
+                                <span class="tech-badge">Pandas</span>
+                                <span class="tech-badge">Matplotlib</span>
+                                <span class="tech-badge">Stock Analysis</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass-panel">
+                        <div class="project-header">
+                            <div class="project-type"><i class="fa-solid fa-link"></i> Web & Database System</div>
+                            <h3 class="project-title">Django URL Shortener</h3>
+                        </div>
+                        <div class="project-body">
+                            <p class="project-description">
+                                A robust web application that converts long URLs into short, easy-to-share custom links and efficiently redirects users to the original long URL destination.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Django (Python)</span>
+                                <span class="tech-badge">SQLite</span>
+                                <span class="tech-badge">PostgreSQL</span>
+                                <span class="tech-badge">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                                <i class="fa-brands fa-github"></i> Repository
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Academic Background</span>
+                    <h2 class="section-title">Education</h2>
+                </div>
+
+                <div class="education-grid">
+                    <!-- B.Tech -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-year">2022 — 2026</div>
+                        <h3 class="edu-degree">B. Tech in Computer Science and Engineering</h3>
+                        <h4 class="edu-institution">BVC Engineering College</h4>
+                        <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Odalarevu, India</p>
+                        <div class="edu-score">
+                            <span class="score-label">GPA:</span>
+                            <span class="score-value">7.53</span>
+                        </div>
+                    </div>
+
+                    <!-- Intermediate -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-year">2020 — 2022</div>
+                        <h3 class="edu-degree">Board of Intermediate Education (MPC)</h3>
+                        <h4 class="edu-institution">Vidyanidhi Jr College</h4>
+                        <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Amalapuram, India</p>
+                        <div class="edu-score">
+                            <span class="score-label">GPA:</span>
+                            <span class="score-value">68.5%</span>
+                        </div>
+                    </div>
+
+                    <!-- SSC -->
+                    <div class="education-card glass-panel">
+                        <div class="edu-year">2019</div>
+                        <h3 class="edu-degree">Secondary School Certificate (SSC)</h3>
+                        <h4 class="edu-institution">Arsha Vignana Bharathi</h4>
+                        <p class="edu-location"><i class="fa-solid fa-location-dot"></i> Komaragiripatnam, India</p>
+                        <div class="edu-score">
+                            <span class="score-label">GPA:</span>
+                            <span class="score-value">7.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Continuous Learning</span>
+                    <h2 class="section-title">Certifications</h2>
+                </div>
+
+                <div class="certifications-grid">
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                        <div class="cert-info">
+                            <h3>Oracle Java Fundamentals</h3>
+                            <p class="cert-provider">Oracle</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+                        <div class="cert-info">
+                            <h3>Oracle Java Foundations</h3>
+                            <p class="cert-provider">Oracle</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-gear"></i></div>
+                        <div class="cert-info">
+                            <h3>Certified Application Developer</h3>
+                            <p class="cert-provider">ServiceNow</p>
+                        </div>
+                    </div>
+
+                    <div class="cert-card glass-panel">
+                        <div class="cert-icon"><i class="fa-solid fa-sliders"></i></div>
+                        <div class="cert-info">
+                            <h3>Certified System Administrator</h3>
+                            <p class="cert-provider">ServiceNow</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Highlights Section -->
+        <section class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Value Proposition</span>
+                    <h2 class="section-title">Key Strengths</h2>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="strength-card glass-panel">
+                        <i class="fa-solid fa-magnifying-glass-chart strength-icon"></i>
+                        <h3>Data Interpretation</h3>
+                        <p>Adept at organizing raw data and leveraging libraries like Pandas & NumPy to discover trends and actionable insights.</p>
+                    </div>
+
+                    <div class="strength-card glass-panel">
+                        <i class="fa-solid fa-laptop-code strength-icon"></i>
+                        <h3>Full Stack Awareness</h3>
+                        <p>Comprehends end-to-end software architectures, making backend SQL query optimization and visualization integration seamless.</p>
+                    </div>
+
+                    <div class="strength-card glass-panel">
+                        <i class="fa-solid fa-seedling strength-icon"></i>
+                        <h3>Commitment to Growth</h3>
+                        <p>Consistently upskilling across Oracle, ServiceNow, and modern Data Analytics tools to address evolving technology landscapes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section bg-alt">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Get In Touch</span>
+                    <h2 class="section-title">Contact Me</h2>
+                </div>
+
+                <div class="contact-wrapper">
+                    <div class="contact-info-grid">
+                        <a href="mailto:anushakakileti33@gmail.com" class="contact-card glass-panel">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <p class="contact-value">anushakakileti33@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+919100078838" class="contact-card glass-panel">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <p class="contact-value">+91 9100078838</p>
+                            </div>
+                        </a>
+
+                        <div class="contact-card glass-panel">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <p class="contact-value">Amalapuram, A.P, India</p>
+                            </div>
+                        </div>
+
+                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-card glass-panel">
+                            <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div>
+                                <span class="contact-label">LinkedIn</span>
+                                <p class="contact-value">Connect on LinkedIn</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-box">AK</span>
+                <span class="footer-name">Anusha Kakileti</span>
+                <p class="footer-title">Aspiring Data Analyst</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Anusha Kakileti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back To Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="index.js"></script>
+</body>
+</html>
